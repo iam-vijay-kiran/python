@@ -46,3 +46,28 @@ print(lambda_concatinate_2strings(c,d))
 lambda_max = lambda x, y : max(x,y)     # lambda_max = lambda x, y : x if x>y else y 
 
 print(lambda_max(20,30))
+
+
+
+
+
+## How 2 work with MAP(), FILTER(), REDUCE()
+
+## Implimenting MAP funtion == list mapping 1 element to other without looping
+
+list1 = [1,2,3,4,5,6,7,8,9]   # o/p needed = square of list
+
+square_num = lambda x : x * x
+
+# syntax : map(func, iter1)
+square_list = list(map(square_num, list1))   # directly gives map object so we typecase o/p to list            
+print(square_list)
+
+# Add sequential respective elements in two given lists
+l_a = [1,2,3,4,5]
+l_b = [5,4,3,2,1]
+
+#result = [6,6,6,6,6]
+sum_2_elements = lambda x , y : x + y 
+result = list(map(sum_2_elements, l_a, l_b))
+print(result)
