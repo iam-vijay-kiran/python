@@ -34,4 +34,5 @@ list_c = [1,-1,2,-5,9,10,-6]
 # result = [1,2,9,10,-1,-5,-6]
 
 result = [x for x in list_c if x>0] + [x for x in list_c if x<0]
+result.sort()   ## to sort num in asc to desc order/    if we need in desc to asc then result.sort(Reverse=True)
 print(result)
