@@ -71,3 +71,29 @@ l_b = [5,4,3,2,1]
 sum_2_elements = lambda x , y : x + y 
 result = list(map(sum_2_elements, l_a, l_b))
 print(result)
+
+
+
+## How 2 use REDUCE func?
+# reduces the output to final 1 value (not a iteratable) using some xpression
+import functools
+
+l_x = [1,2,3,4,5]
+add_2_numbs = lambda x , y : x + y
+result = functools.reduce(add_2_numbs , l_x)  # result = result + i
+print(result)
+
+l_x = [1,2,3,4,5]
+add_2_numbs = lambda x , y : x * y
+result = functools.reduce(add_2_numbs , l_x)  # result = result * i
+print(result)
+
+
+
+#How to use filter()
+
+seq = [1,2,5,6,9,7,10]
+filter_odd = lambda x : x % 2 !=0   # filtering odd numbers
+
+result = list(filter(filter_odd, seq))    # type casted as list to get a readable output
+print(result)
