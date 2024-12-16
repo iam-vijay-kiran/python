@@ -24,19 +24,19 @@ full_name = str_data + " " + "mishra"
 print("Full name = ", full_name)
 
 # if we can use - as well ? IT will not work
-minus_str = "shashank" - "mishra"
+minus_str = "vijay" - "kiran"
 print("Minus str = ", minus_str)
 
-multiply_str = "shashank"*"mishra"
+multiply_str = "vijay"*"kiran"
 print("Multiply str = ", multiply_str)
 
-power_str = "shashank"**"mishra"
+power_str = "vijay"**"kiran"
 print("Power str = ", power_str)
 
-power_str = "shashank" ** 3
+power_str = "vijay" ** 3
 print("Power str = ", power_str)
 
-multiply_numeric_str = "shashank"*5
+multiply_numeric_str = "vijay"*5
 print("Multiply numeric str = ", multiply_numeric_str)
 
 # Assignment operators
